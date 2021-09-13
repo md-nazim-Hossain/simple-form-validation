@@ -1,0 +1,95 @@
+body{
+    /* background-color: #ffaf40; */
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    background-color: #4b4b4b;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0%;
+    position: absolute;
+    opacity:0.9;
+}
+.container{
+    width: 30%;
+    margin: 100px auto;
+    background-color: #3d3d3d;
+    background-image: url('back.png');
+    border-radius: 5px;
+}
+.form-container{
+    width: 80%;
+    margin:20px auto;
+    display: none; 
+}
+.active{
+    display: block;
+}
+
+/* button top section */
+.btn-top{
+    width: 80%;
+    height: 30px;
+    margin: 20px auto;
+    padding: 30px 0px;
+    border-bottom: 1px solid gray;
+}
+.btn-top button{
+    background-color: transparent;
+    border-radius: 0%;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top:10px;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.btn-top button:hover{
+    border-bottom: 1px solid white;
+}
+.btn-active{
+    border-right: 2px solid green !important;
+}
+/* form section */
+.gap{
+    margin-top: 10px;
+}
+input[type='text'],input[type='email']{
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ff9f1a;
+    color: white;
+    font-size: 14px;
+}
+.check{
+    padding: 10px;
+    color: white;
+}
+input[type='checkbox']{
+    border-radius: 4px;
+    border-color: #ff9f1a;
+}
+.btn{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    padding: 8px 15px;
+    margin:10px 5px 20px 0px;
+    border-radius: 5px;
+}
+.submit{
+    background-color: green;
+}
+.reset{
+    background-color: rgba(235, 23, 23, 0.904);
+}
