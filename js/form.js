@@ -11,3 +11,5 @@ const sign = () =>{
     addRemove('signup','login','active')
     addRemove('btn-active-sign','btn-active-log','btn-active');
 }
+
+// check confirm or pass match

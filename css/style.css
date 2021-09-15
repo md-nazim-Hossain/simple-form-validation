@@ -14,6 +14,7 @@ section{
 }
 .container{
     width: 30%;
+    max-width: 90%;
     margin: 100px auto;
     background-color: #3d3d3d;
     background-image: url('back.png');
@@ -23,6 +24,7 @@ section{
     width: 80%;
     margin:20px auto;
     display: none; 
+
 }
 .active{
     display: block;
@@ -32,45 +34,60 @@ section{
 .btn-top{
     width: 80%;
     height: 30px;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 30px 0px;
     border-bottom: 1px solid gray;
 }
 .btn-top button{
     background-color: transparent;
     border-radius: 0%;
-    border: none;
+    border:none;
     outline: none;
     color: white;
     text-transform: uppercase;
     font-size: 16px;
     margin-top:10px;
-    margin-right: 5px;
+    margin-right: 10px;
     transition: 0.3s ease;
 }
 .btn-top button:hover{
     border-bottom: 1px solid white;
 }
 .btn-active{
-    border-right: 2px solid green !important;
+   color: green !important;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* form section */
 .gap{
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    border-bottom: 1px solid #ff9f1a;
 }
-input[type='text'],input[type='email']{
+.gap:last-child{
+    border-bottom: none;
+}
+input[type='text'],input[type='email'],input[type='password']{
     width: 90%;
     padding: 10px;
     margin: 5px;
     background-color:transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid #ff9f1a;
     color: white;
     font-size: 14px;
 }
 .check{
     padding: 10px;
+    padding-left: 0px;
     color: white;
 }
 input[type='checkbox']{
@@ -93,3 +110,29 @@ input[type='checkbox']{
 .reset{
     background-color: rgba(235, 23, 23, 0.904);
 }
+/* all icons */
+.d-inline{
+    display: inline;
+    width: 20px;
+    height: 20px;
+    color: gray;
+}
+@media screen and (max-width:562px) {
+    .container{
+        width: 100%;
+    }
+}
+/* valid validation class */
+/* .valid{
+    border-bottom:1px solid green !important;
+}
+.txtColor{
+    color: green;
+}
+/*error validation class */
+/* .inValid{
+    border-bottom:1px solid red !important;
+}
+.textColor{
+    color: red;
+} */ 
